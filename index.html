@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -16,10 +16,14 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Flags CSS -->
+  <link href="flags/flags.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/freelancer.css" rel="stylesheet">
@@ -32,20 +36,39 @@
   <nav class="navbar navbar-expand-lg bg-primary fixed-top text-uppercase" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Appvanced</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+        data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
+      <div class="container text-center">
+          <a href="#" hreflang="de" onclick="setLang('de'); return false"><img src="blank.gif" class="flag flag-de"
+            alt="Germany" /></a>
+        <a href="#" hreflang="en" onclick="setLang('en'); return false"><img src="blank.gif" class="flag flag-gb"
+            alt="United Kingdom" /></a>
+        <a href="#" hreflang="es" onclick="setLang('es'); return false"><img src="blank.gif" class="flag flag-es"
+            alt="Spain" /></a>
+            </div>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#page-top">Home</a>
+          </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            <a lang='de' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Über</a>
+            <a lang='en' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            <a lang='es' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre</a>
+
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            <a lang='de' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Kontakt</a>
+            <a lang='en' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            <a lang='es' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -56,10 +79,14 @@
   <header class="masthead text-black text-center">
     <div class="container">
       <img class="img-fluid mb-5 d-block mx-auto" src="img/flutter.png" alt="">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/swift.png" alt="">
-      <h1 class="text-uppercase mb-0">Let us build your app!</h1>
+  
+      <h1 lang='de' class="text-uppercase mb-0">Lassen Sie uns Ihre App erstellen!</h1>
+      <h1 lang='en' class="text-uppercase mb-0">Let us build your app!</h1>
+      <h1 lang='es' class="text-uppercase mb-0">Hacemos tu App realidad!</h1>
+
       <hr>
-      <h2 class="font-weight-light mb-0">With the expertise and knowledge of our Developers, we build fast and reliable apps for both platforms. With Swiss quality but non Swiss prices.</h2>
+      <h2 class="font-weight-light mb-0">With the expertise and knowledge of our Developers, we build fast and reliable
+        apps for both platforms. With Swiss quality but non Swiss prices.</h2>
     </div>
   </header>
 
@@ -140,10 +167,14 @@
       <hr color="#fff">
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+            complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
+            customization.</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract
+            clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+          </p>
         </div>
       </div>
       <!-- <div class="text-center mt-4">
@@ -168,28 +199,32 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                <input class="form-control" id="name" type="text" placeholder="Name" required="required"
+                  data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Email Address</label>
-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
+                  data-validation-required-message="Please enter your email address.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Phone Number</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"
+                  data-validation-required-message="Please enter your phone number.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Message</label>
-                <textarea class="form-control" id="message" rows="8" placeholder="Message" required="required" data-validation-required-message="Please enter a message.">
+                <textarea class="form-control" id="message" rows="8" placeholder="Message" required="required"
+                  data-validation-required-message="Please enter a message.">
                  - Do you have a budget? Yes/No. If yes how much?
                  - Both Platforms? Yes/No. If no, which one? 
                  - Do you need user authentication? Yes/No.
@@ -288,7 +323,9 @@
             <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
+              soluta, eos quod consequuntur itaque. Nam.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -310,7 +347,9 @@
             <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
+              soluta, eos quod consequuntur itaque. Nam.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -332,7 +371,9 @@
             <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
+              soluta, eos quod consequuntur itaque. Nam.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -354,7 +395,9 @@
             <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
+              soluta, eos quod consequuntur itaque. Nam.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -376,7 +419,9 @@
             <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
+              soluta, eos quod consequuntur itaque. Nam.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -398,7 +443,9 @@
             <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
+              soluta, eos quod consequuntur itaque. Nam.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
