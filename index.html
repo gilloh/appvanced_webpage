@@ -1,14 +1,25 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Experienced developers make your app come true">
+  <meta name="author" content="Magical Devs">
 
-  <title>Appvanced - Mobile App Experts</title>
+  <title>Magical Devs - Mobile App Experts</title>
+
+  <!-- Favicon section-->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ff0000">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,9 +33,6 @@
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
-  <!-- Flags CSS -->
-  <link href="flags/flags.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
   <link href="css/freelancer.css" rel="stylesheet">
 
@@ -35,125 +43,127 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-primary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Appvanced</a>
-
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Magical Devs</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
         data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="container text-center">
-          <a href="#" hreflang="de" onclick="setLang('de'); return false"><img src="blank.gif" class="flag flag-de"
-            alt="Germany" /></a>
-        <a href="#" hreflang="en" onclick="setLang('en'); return false"><img src="blank.gif" class="flag flag-gb"
-            alt="United Kingdom" /></a>
-        <a href="#" hreflang="es" onclick="setLang('es'); return false"><img src="blank.gif" class="flag flag-es"
-            alt="Spain" /></a>
-            </div>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#page-top">Home</a>
+            <a id="navItemHome" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#page-top">Home</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a id="navItemPortfolio" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio"></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a lang='de' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Über</a>
-            <a lang='en' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-            <a lang='es' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre</a>
-
+            <a id="navItemAbout" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about"></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a lang='de' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Kontakt</a>
-            <a lang='en' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-            <a lang='es' class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contacto</a>
+            <a id="navItemContact" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact"></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
   <!-- Header -->
   <header class="masthead text-black text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/flutter.png" alt="">
-  
-      <h1 lang='de' class="text-uppercase mb-0">Lassen Sie uns Ihre App erstellen!</h1>
-      <h1 lang='en' class="text-uppercase mb-0">Let us build your app!</h1>
-      <h1 lang='es' class="text-uppercase mb-0">Hacemos tu App realidad!</h1>
-
-      <hr>
-      <h2 class="font-weight-light mb-0">With the expertise and knowledge of our Developers, we build fast and reliable
-        apps for both platforms. With Swiss quality but non Swiss prices.</h2>
+      <img class="img-fluid mb-5 d-block mx-auto" src="img/flutter.png" alt="Flutter Android and iOS logo">
+      <h1 id="mTitle" class="text-uppercase mb-0">Let us build your app!</h1>
+      <hr color="#29B6F6">
+      <h2 id="mDetail" class="font-weight-light mb-0">We are experts!</h2>
     </div>
   </header>
 
   <!-- Portfolio Grid Section -->
   <section class="portfolio bg-middle" id="portfolio">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-white mb-0">Portfolio</h2>
+    <div class="container text-center">
+      <h2 id="itemPortfolio" class="text-center text-uppercase text-white mb-0">Portfolio</h2>
       <hr color="#fff">
       <div class="row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
+                <h3 class="text-center text-uppercase text-white mb-0">SWISS</h3>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            <img class="img-fluid" src="img/portfolio/swiss.jpg" alt="Swiss logo">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
+                <h3 class="text-center text-uppercase text-white mb-0">My Sunrise</h3>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="img/portfolio/sunrise.jpg" alt="Sunrise logo">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
+                <h3 class="text-center text-uppercase text-white mb-0">KITAG CINEMAS</h3>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            <img class="img-fluid" src="img/portfolio/kitag.jpg" alt="Kitag logo">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
+                <h3 class="text-center text-uppercase text-white mb-0">SpiritChat</h3>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+            <img class="img-fluid" src="img/portfolio/spiritchat.png" alt="Spiritchat logo">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
+                <h3 class="text-center text-uppercase text-white mb-0">Energy Challenge</h3>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+            <img class="img-fluid" src="img/portfolio/energyChallenge.jpeg" alt="EnergyChallenge logo">
           </a>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
+                <h3 class="text-center text-uppercase text-white mb-0">Crypto Currency Watch Face</h3>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+            <img class="img-fluid" src="img/portfolio/cryptotwo.png" alt="Cryptocurrency screenshot">
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-7">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <h3 class="text-center text-uppercase text-white mb-0">Gaydar</h3>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/gaydar.jpg" alt="Gaydar logo">
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-8">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <h3 class="text-center text-uppercase text-white mb-0">TrustCase</h3>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/trustcase2.jpeg" alt="Trustcase logo">
           </a>
         </div>
       </div>
@@ -163,21 +173,21 @@
   <!-- About Section -->
   <section class="bg-secondary text-white mb-0" id="about">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
+      <h2 id="itemAbout" class="text-center text-uppercase text-white">About</h2>
       <hr color="#fff">
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
-            complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
-            customization.</p>
+          <p id="aboutDetail1" class="lead">Who?</p>
         </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract
-            clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-          </p>
+        <div class="col-lg-4 ml-auto">
+          <p id="aboutDetail2" class="lead">Why?</p>
+        </div>
+        <div class="col-lg-4 ml-auto">
+          <p id="aboutDetail3" class="lead">When?</p>
         </div>
       </div>
-      <!-- <div class="text-center mt-4">
+    </div>
+    <!-- <div class="text-center mt-4">
         <a class="btn btn-xl btn-outline-light" href="#">
           <i class="fas fa-download mr-2"></i>
           Download Now!
@@ -189,8 +199,8 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Contact us</h2>
-      <hr class="star-dark mb-5">
+      <h2 id="itemContact" class="text-center text-uppercase text-secondary mb-0">Contact</h2>
+      <hr color="#29B6F6">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -206,7 +216,7 @@
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Email Address</label>
+                <label id="emailLabel"></label>
                 <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
                   data-validation-required-message="Please enter your email address.">
                 <p class="help-block text-danger"></p>
@@ -223,16 +233,17 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Message</label>
-                <textarea class="form-control" id="message" rows="8" placeholder="Message" required="required"
-                  data-validation-required-message="Please enter a message.">
-                 - Do you have a budget? Yes/No. If yes how much?
-                 - Both Platforms? Yes/No. If no, which one? 
-                 - Do you need user authentication? Yes/No.
-                 - Social Media login? Yes/No.
-                 - How complex would you say the interface is? S/M/L/XL.
-                 - Do you need maps integration? Yes/No.
-                 - Do you need analytics? Yes/No.
-                 - Do you need data persistence? Yes/No.
+                <textarea class="form-control" id="message" rows="12" cols="80" placeholder="Message"
+                  required="required" data-validation-required-message="Please enter a message.">
+- Do you have a budget? Yes/No. If yes how much?
+- Both platforms (iOS, Android)? Yes/No. If no, which one?
+- Do you need user authentication (login/registration)? Yes/No.
+- Social Media login (Facebook/Twitter/Instagram)? Yes/No.
+- How big (number of screens) would you say the app is? S/M/L/XL.
+- Do you need maps (location) functionality? Yes/No.
+- Do you need analytics (tracking user actions)? Yes/No.
+- Do you need data persistence (saving data locally on smartphone to be available offline)? Yes/No.
+- Do you need the app to have more than one supported language? Yes/No.
                 </textarea>
                 <p class="help-block text-danger"></p>
               </div>
@@ -249,18 +260,18 @@
   </section>
 
   <!-- Footer -->
-  <!-- <footer class="footer text-center">
-    <div class="container">
+  <footer class="footer text-center">
+    <div class="container text-center">
       <div class="row">
-        <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
+        <div class="col-md-4 mb-4">
+          <h4 id="addressTitle" class="text-uppercase mb-4">Our Location</h4>
+          <p class="lead mb-0">8001 Zürich, Switzerland</p>
         </div>
-        <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
+        <!-- <br>Clark, MO 45243</p>3        </div> -->
+        <div class="col-md-4 mb-4">
+          <h4 id="profilesTitle" class="text-uppercase mb-4"></h4>
           <ul class="list-inline mb-0">
-            <li class="list-inline-item">
+            <!-- <li class="list-inline-item">
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                 <i class="fab fa-fw fa-facebook-f"></i>
               </a>
@@ -274,7 +285,7 @@
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                 <i class="fab fa-fw fa-twitter"></i>
               </a>
-            </li>
+            </li> -->
             <li class="list-inline-item">
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                 <i class="fab fa-fw fa-linkedin-in"></i>
@@ -282,24 +293,35 @@
             </li>
             <li class="list-inline-item">
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-dribbble"></i>
+                <i class="fab fa-fw fa-linkedin-in"></i>
               </a>
             </li>
+            <!-- <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fab fa-fw fa-dribbble"></i>
+              </a>
+            </li> -->
           </ul>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <h4 class="text-uppercase mb-4">About Freelancer</h4>
           <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
             <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-        </div>
+        </div> -->
       </div>
     </div>
-  </footer> -->
+  </footer>
 
-  <div class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Appvanced Ltd 2019</small>
+  <div class="copyright bg-secondary py-4 text-center text-white">
+    <div class="container text-center">
+      <a href="#" onclick="translatedStrings('de');"><b>DE</b></a>
+      <a href="#" onclick="translatedStrings('en');"><b>EN</b></a>
+      <a href="#" onclick="translatedStrings('es');"><b>ES</b></a>
     </div>
+    <div class="container">
+      <small>Copyright &copy; Magical Devs 2019</small>
+    </div>
+    <p id="bLang" style="visibility: hidden;"></p>
   </div>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -320,15 +342,18 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
-              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
-              soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
+            <h2 class="text-secondary text-uppercase mb-0">SWISS</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/swiss.jpg" alt="Swiss logo">
+            <div class="container text-center">
+              <a href="https://itunes.apple.com/ch/app/swiss/id343038584?mt=8"><img src="img/appstore.png"
+                  alt="Appstore logo" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.yoc.swiss.swiss&hl=en"><img
+                  src="img/playstore.png" alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton1" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -344,15 +369,18 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
-              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
-              soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
+            <h2 class="text-secondary text-uppercase mb-0">My Sunrise</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/sunrise.jpg" alt="Sunrise logo">
+            <div class="container text-center">
+              <a href="https://itunes.apple.com/ch/app/my-sunrise/id466738063?l=en&mt=8"><img src="img/appstore.png"
+                  alt="Appstore logo" /></a>
+              <a href="https://play.google.com/store/apps/details?id=ch.sunrise.mein.konto"><img src="img/playstore.png"
+                  alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton2" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -368,15 +396,18 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
-              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
-              soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
+            <h2 class="text-secondary text-uppercase mb-0">KITAG CINEMAS</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/kitag.jpg" alt="Kitag logo">
+            <div class="container text-center">
+              <a href="https://itunes.apple.com/ch/app/kitag-cinemas/id1112927541?l=en&mt=8"><img src="img/appstore.png"
+                  alt="Appstore logo" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.edge5.nativeMenuKitag&hl=en"><img
+                  src="img/playstore.png" alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton3" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -392,15 +423,18 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
-              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
-              soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
+            <h2 class="text-secondary text-uppercase mb-0">SpiritChat</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/spiritchat.png" alt="Spiritchat logo">
+            <div class="container text-center">
+              <a href="https://itunes.apple.com/us/app/spiritchat/id1350657799?mt=8"><img src="img/appstore.png"
+                  alt="Appstore logo" /></a>
+              <a href="https://play.google.com/store/apps/details?id=ch.spiritchat"><img src="img/playstore.png"
+                  alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton4" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -416,15 +450,18 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
-              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
-              soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
+            <h2 class="text-secondary text-uppercase mb-0">ENERGY CHALLENGE</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/energyChallenge.jpeg" alt="Energy Challenge logo">
+            <div class="container text-center">
+              <a href="https://itunes.apple.com/ch/app/energy-challenge-app/id1230889720?mt=8"><img
+                  src="img/appstore.png" alt="Appstore logo" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.bfe.enc2017&hl=en"><img src="img/playstore.png"
+                  alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton5" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -440,15 +477,70 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
-              nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit
-              soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
+            <h2 class="text-secondary text-uppercase mb-0">Crypto Currency Watch Face</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/cryptotwo.png" alt="Cryptocurrency logo">
+            <div class="container text-center">
+              <a href="https://play.google.com/store/apps/details?id=dev.cytronix.cryptocurrency"><img
+                  src="img/playstore.png" alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton6" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 7 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-7">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Gaydar - Gay Dating</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/gaydar.jpg" alt="Gaydar logo">
+            <div class="container text-center">
+              <a href="https://itunes.apple.com/us/app/gaydar-gay-dating-and-chat/id371711798?mt=8"><img
+                  src="img/appstore.png" alt="Appstore logo" /></a>
+              <a href="https://play.google.com/store/apps/details?id=co.uk.qsoft.gaydar&hl=en"><img
+                  src="img/playstore.png" alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton7" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 8 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">TrustCase</h2>
+            <hr>
+            <img class="img-fluid mb-5" src="img/portfolio/trustcase2.jpeg" alt="Trustcase logo">
+            <div class="container text-center">
+              <a href="https://itunes.apple.com/de/app/trustcase/id1031867928?l=en&mt=8"><img src="img/appstore.png"
+                  alt="Appstore logo" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.trustcase"><img src="img/playstore.png"
+                  alt="Playstore logo" /></a>
+            </div>
+            <hr>
+            <a id="closeButton8" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -469,6 +561,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
 </body>
 
