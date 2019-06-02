@@ -201,66 +201,46 @@
     <div class="container">
       <h2 id="itemContact" class="text-center text-uppercase text-secondary mb-0">Contact</h2>
       <hr color="#29B6F6">
+      </br>
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" required="required"
-                  data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label id="emailLabel"></label>
-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
-                  data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Phone Number</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"
-                  data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Message</label>
-                <textarea class="form-control" id="message" rows="12" cols="80" placeholder="Message"
-                  required="required" data-validation-required-message="Please enter a message.">
-- Do you have a budget? Yes/No. If yes how much?
-- Both platforms (iOS, Android)? Yes/No. If no, which one?
-- Do you need user authentication (login/registration)? Yes/No.
-- Social Media login (Facebook/Twitter/Instagram)? Yes/No.
-- How big (number of screens) would you say the app is? S/M/L/XL.
-- Do you need maps (location) functionality? Yes/No.
-- Do you need analytics (tracking user actions)? Yes/No.
-- Do you need data persistence (saving data locally on smartphone to be available offline)? Yes/No.
-- Do you need the app to have more than one supported language? Yes/No.
-                </textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-            </div>
-          </form>
+        <div class="col-md-4 mb-4 text-center">
+          <h4 id="addressTitle" class="text-uppercase mb-4">Our Location</h4>
+          <p class="lead mb-0">8001 Zürich, Switzerland</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4 id="contactTitle" class="text-uppercase mb-4">Our Email</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a id="emailMailTo" class="btn btn-outline-dark btn-social text-center rounded-circle">
+                <i class="fab fa-fw fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <h4 id="profilesTitle" class="text-uppercase mb-4">Our Profiles</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-dark btn-social text-center rounded-circle"
+                href="https://www.linkedin.com/in/bruno-r-83986963/">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item text-center">
+              <a class="btn btn-outline-dark btn-social text-center rounded-circle"
+                href="https://ch.linkedin.com/in/marcel-ritz">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <!-- <footer class="footer text-center">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-4">
@@ -294,7 +274,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <div class="copyright bg-secondary py-4 text-center text-white">
     <div class="container text-center">
@@ -364,7 +344,7 @@
             </div>
             <hr>
             <a id="closeButton2" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i></a>
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -391,7 +371,7 @@
             </div>
             <hr>
             <a id="closeButton3" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i></a>
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -418,7 +398,7 @@
             </div>
             <hr>
             <a id="closeButton4" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i></a>
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -445,7 +425,7 @@
             </div>
             <hr>
             <a id="closeButton5" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i></a>
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -470,7 +450,7 @@
             </div>
             <hr>
             <a id="closeButton6" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i></a>
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -497,7 +477,7 @@
             </div>
             <hr>
             <a id="closeButton7" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i></a>
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -524,7 +504,7 @@
             </div>
             <hr>
             <a id="closeButton8" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i></a>
+              <i class="fa fa-close"></i></a>
           </div>
         </div>
       </div>
@@ -552,3 +532,57 @@
 </body>
 
 </html>
+
+
+<!-- <div class="col-lg-8 mx-auto"> -->
+<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+<!-- <form name="sentMessage" id="contactForm" novalidate="novalidate">
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+          <label>Name</label>
+          <input class="form-control" id="name" type="text" placeholder="Name" required="required"
+            data-validation-required-message="Please enter your name.">
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+          <label id="emailLabel"></label>
+          <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
+            data-validation-required-message="Please enter your email address.">
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+          <label>Phone Number</label>
+          <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"
+            data-validation-required-message="Please enter your phone number.">
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+          <label>Message</label>
+          <textarea class="form-control" id="message" rows="12" cols="80" placeholder="Message"
+            required="required" data-validation-required-message="Please enter a message."> -->
+<!-- - Do you have a budget? Yes/No. If yes how much?
+- Both platforms (iOS, Android)? Yes/No. If no, which one?
+- Do you need user authentication (login/registration)? Yes/No.
+- Social Media login (Facebook/Twitter/Instagram)? Yes/No.
+- How big (number of screens) would you say the app is? S/M/L/XL.
+- Do you need maps (location) functionality? Yes/No.
+- Do you need analytics (tracking user actions)? Yes/No.
+- Do you need data persistence (saving data locally on smartphone to be available offline)? Yes/No.
+- Do you need the app to have more than one supported language? Yes/No. -->
+<!-- </textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+      </div>
+      <br>
+      <div id="success"></div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+      </div>
+    </form> -->
