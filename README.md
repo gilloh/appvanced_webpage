@@ -1,4 +1,4 @@
-# Magical Devs - Website to promote us
+# Magical Devs - Homepage
 
 ## Copyright and License
 
